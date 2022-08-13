@@ -25,6 +25,13 @@
         socket.on('message', function (payload) {
             console.log('Escuchando: ', payload);
         })
+        socket.on('new-message', function (payload) {
+            console.log('Escuchando: ', payload);
+        })
+        socket.on('active-candidates', function (payload) {
+            console.clear();
+            console.table(payload);
+        })
     </script>
 </body>
 
