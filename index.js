@@ -8,7 +8,7 @@ const app = express();
 // Node server (Socket)
 const server = require('http').createServer(app);
 module.exports.io = require('socket.io')(server);
-require('../sockets/socket');
+require('./sockets/socket');
 
 // Path publico
 const publicPath = path.resolve(__dirname, 'public');
