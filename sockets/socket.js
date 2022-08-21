@@ -1,6 +1,6 @@
-const { io } = require('../index.js');
-const Candidates = require('../models/candidates.js');
-const Candidate = require('../models/candidate.js');
+const { io } = require('../index');
+const Candidates = require('../models/candidates');
+const Candidate = require('../models/candidate');
 
 const candidates = new Candidates();
 candidates.addCandidate(new Candidate('Medina'));
